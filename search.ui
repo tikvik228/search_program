@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>665</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,7 @@
       <x>30</x>
       <y>110</y>
       <width>741</width>
-      <height>441</height>
+      <height>431</height>
      </rect>
     </property>
     <property name="text">
@@ -43,28 +43,28 @@
       <x>630</x>
       <y>10</y>
       <width>160</width>
-      <height>80</height>
+      <height>100</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QPushButton" name="scheme">
+      <widget class="QPushButton" name="standart_button">
        <property name="text">
-        <string>Схема</string>
+        <string>Обычная</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="sputnik">
+      <widget class="QPushButton" name="admin_button">
        <property name="text">
-        <string>Спутник</string>
+        <string>Административная карта</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="gibrid">
+      <widget class="QPushButton" name="transport_button">
        <property name="text">
-        <string>Гибрид</string>
+        <string>Траспортная карта</string>
        </property>
       </widget>
      </item>
@@ -96,6 +96,46 @@
      <string>переключить тему</string>
     </property>
    </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>569</y>
+      <width>791</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Адрес найденного объекта</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="show_res_line">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="postal_checkbox">
+       <property name="text">
+        <string>показывать почтовый индекс</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clear_result">
+       <property name="text">
+        <string>Сбросить результат</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -103,7 +143,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>19</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
